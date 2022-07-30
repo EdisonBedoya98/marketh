@@ -1,8 +1,6 @@
+@use "../../../styles/layouts" as layouts;
 .home {
-  display: flex;
-  background: #345665;
-  min-height: 85vh;
-  padding: 3rem;
+  @include layouts.page();
   h1 {
     font-size: 2rem;
   }

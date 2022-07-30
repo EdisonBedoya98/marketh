@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './shop.module.scss'
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <div className={styles.shop}>Shop</div>
   )
 }
 
