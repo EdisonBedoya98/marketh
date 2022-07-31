@@ -26,4 +26,9 @@
     justify-content: center;
     align-items: center;
   }
+  .link:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    transform: scale(1.1);
+  }
 }
