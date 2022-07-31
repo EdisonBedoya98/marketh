@@ -1,0 +1,7 @@
+@use "../../../styles/layouts" as layouts;
+.home {
+  @include layouts.page();
+  h1 {
+    font-size: 2rem;
+  }
+}
