@@ -58,6 +58,7 @@ export async function getBalance() {
 export async function getCurrentState(id: string) {
   const data = await instance.methods.getCurrentState(id).call()
   console.log(data)
+  return data;
 }
 
 export async function setStatePickUp(id: string, indexPurchase: number) {
