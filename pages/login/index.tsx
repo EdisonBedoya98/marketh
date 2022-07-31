@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { auth } from "../../src/store/firebase-config";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 import {
   createUserWithEmailAndPassword,
@@ -8,7 +8,7 @@ import {
 } from "firebase/auth";
 import styles from "./login.module.scss";
 
-const index = () => {
+const Login = () => {
   const [login, setLogin] = useState(true);
 
   const router = useRouter();
@@ -24,7 +24,7 @@ const index = () => {
           user.value,
           pass.value
         );
-        router.push('/home');
+        router.push("/home");
       } catch (e) {
         console.log(e);
         const tag = document.getElementById("errorMessage");
@@ -55,7 +55,9 @@ const index = () => {
           <label>Contraseña</label>
           <input type="password" name="pass" required />
         </div>
-        <span id="errorMessage" className={styles.messageError}>Error del celular, correo o contraseña</span>
+        <span id="errorMessage" className={styles.messageError}>
+          Error del celular, correo o contraseña
+        </span>
         <button type="submit">
           {login ? "Iniciar sesión" : "Registrarse"}
         </button>
@@ -67,4 +69,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Login;
