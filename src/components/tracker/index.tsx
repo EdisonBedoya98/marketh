@@ -11,26 +11,26 @@ const Tracker = () => {
             title: 'Tomates',
             estado: 'En camino',
             img: 'tomate.jpg',
-            id: '1234'
+            id: '1'
             
         },
         {
             title: 'Cilantro',
             estado: 'En camino',
             img:'tomate.jpg',
-            id: '1234'
+            id: '2'
         },
         {
             title: 'Leche',
             estado: 'En camino',
             img:'tomate.jpg',
-            id: '1234'
+            id: '3'
         },
         {
             title: 'Guaro',
             estado: 'En camino',
             img:'tomate.jpg',
-            id: '1234'
+            id: '4'
         }
     ]
 
@@ -39,7 +39,7 @@ const Tracker = () => {
           <h1>Mis pedidos</h1>
           <div className={styles.pedidos}>
               {products.map(product => (
-                  <Link href='pedido' key={product.id}>
+                  <Link href={`/product/${product.id}`} key={product.id}>
                     <div className={styles.pedido}>
                   <img src={product.img} alt="image description" />
                   <div className={styles.content}>
