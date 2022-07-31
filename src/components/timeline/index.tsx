@@ -4,6 +4,7 @@ import styles from './timeline.module.scss'
 
 
 type props = {
+    "status": string,
     "links": {
         "pending": string,
         "pickedUp": string,
