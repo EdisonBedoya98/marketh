@@ -1,12 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Link to contract
+## Link to Smartcontract
 https://github.com/EdisonBedoya98/escrow-hackathon
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
