@@ -6,17 +6,19 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <Link href='/home'>
-      <div className=""></div>
+      <div className={styles.link}>🏠</div>
       </Link>  
       <Link href='/shop'>
-      <div className=""></div>
-      
+      <div className={styles.link}>🏪</div>
       </Link>  
       <Link href='/tracker'>
-      <div className=""></div>
+      <div className={styles.link}>🧺</div>
       </Link>  
     </div>
   )
 }
+
+
+
 
 export default Navbar
